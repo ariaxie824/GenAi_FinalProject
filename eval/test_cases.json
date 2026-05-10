@@ -1,0 +1,65 @@
+[
+  {
+    "id": "tc_001",
+    "description": "Eiffel Tower selfie, no EXIF GPS",
+    "image_description": "Tourist photo in front of Eiffel Tower, daytime, clear sky",
+    "exif_data": {"datetime": "2024-06-15", "gps": null},
+    "expected": {
+      "location_name": "Eiffel Tower, Paris",
+      "date": "2024-06-15",
+      "tags_must_include_any": ["paris", "france", "eiffel tower", "landmark", "europe"],
+      "transport_emoji": "✈️"
+    }
+  },
+  {
+    "id": "tc_002",
+    "description": "Tokyo street food, full EXIF",
+    "image_description": "Busy street food stall in Shinjuku, Tokyo, evening neon lights",
+    "exif_data": {
+      "datetime": "2023-11-03",
+      "gps": {"lat": 35.6896, "lon": 139.6917}
+    },
+    "expected": {
+      "location_name_contains_any": ["tokyo", "shinjuku", "japan"],
+      "date": "2023-11-03",
+      "tags_must_include_any": ["japan", "tokyo", "street food", "night", "food", "neon"],
+      "transport_emoji": "✈️"
+    }
+  },
+  {
+    "id": "tc_003",
+    "description": "Mountain road trip, no EXIF at all",
+    "image_description": "Car parked on scenic mountain pass with snow-capped peaks, USA Rocky Mountains",
+    "exif_data": {"datetime": null, "gps": null},
+    "expected": {
+      "location_name_contains_any": ["rocky mountains", "colorado", "mountain", "usa", "utah"],
+      "tags_must_include_any": ["mountain", "road trip", "nature", "snow", "hiking"],
+      "transport_emoji": "🚗"
+    }
+  },
+  {
+    "id": "tc_004",
+    "description": "Train station in Europe",
+    "image_description": "Grand historic train station with iron and glass roof, people with luggage, European style",
+    "exif_data": {"datetime": "2024-09-20", "gps": null},
+    "expected": {
+      "tags_must_include_any": ["train", "station", "europe", "travel", "architecture"],
+      "transport_emoji": "🚂"
+    }
+  },
+  {
+    "id": "tc_005",
+    "description": "Beach in Southeast Asia",
+    "image_description": "Turquoise water, long-tail boats, limestone karsts in background, Thailand",
+    "exif_data": {
+      "datetime": "2024-01-10",
+      "gps": {"lat": 7.8804, "lon": 98.3923}
+    },
+    "expected": {
+      "location_name_contains_any": ["thailand", "krabi", "phi phi", "phuket", "sea"],
+      "date": "2024-01-10",
+      "tags_must_include_any": ["beach", "thailand", "ocean", "tropical", "boat"],
+      "transport_emoji_any": ["✈️", "🚢", "🚌"]
+    }
+  }
+]

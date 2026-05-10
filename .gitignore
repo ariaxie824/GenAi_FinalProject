@@ -1,0 +1,14 @@
+# API key and secrets
+.env
+
+# User-uploaded photos
+data/uploads/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db

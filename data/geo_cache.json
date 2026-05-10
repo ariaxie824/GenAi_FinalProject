@@ -1,0 +1,29 @@
+{
+  "antelope canyon, arizona": {
+    "lat": 36.930266,
+    "lon": -111.4219676
+  },
+  "sydney opera house, sydney": {
+    "lat": -33.857198,
+    "lon": 151.2151234
+  },
+  "hongcun village, anhui province": {
+    "lat": 30.004784,
+    "lon": 117.9847312
+  },
+  "k-pop concert venue": null,
+  "rod laver arena, melbourne": {
+    "lat": -37.8215688,
+    "lon": 144.9785875
+  },
+  "shanghai national convention and exhibition center": null,
+  "mercedes-benz arena, shanghai": {
+    "lat": 31.1909263,
+    "lon": 121.488699
+  },
+  "national stadium, beijing, china": {
+    "lat": 39.9914041,
+    "lon": 116.3902864
+  },
+  "kat tak sports park, hongkong, china": null
+}
